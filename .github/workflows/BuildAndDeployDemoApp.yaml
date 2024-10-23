@@ -39,7 +39,7 @@ jobs:
       with:
         context: src/demoapp
         push: true
-        tags: ghcr.io/${{ github.repository }}/demoapp:latest
+        tags: ghcr.io/${{ github.repository }}/demoapp:${{ github.run_id }}
 
   deploy-to-azure:
     runs-on: ubuntu-latest
@@ -69,6 +69,6 @@ jobs:
       - name: 'Terraform Apply'
         working-directory: terraform/demoapp
         env:
-          TF_VAR_image: ghcr.io/${{ github.repository }}/demoapp:latest
+          TF_VAR_image: ghcr.io/${{ github.repository }}/demoapp:${{ github.run_id }}
         run: |
           terraform apply -auto-approve

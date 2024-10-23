@@ -35,7 +35,8 @@
                 "hashicorp.terraform",
 				"github.copilot",
 				"github.copilot-chat",
-				"ms-azuretools.vscode-azurecontainerapps"
+				"ms-azuretools.vscode-azurecontainerapps",
+				"github.vscode-github-actions"
             ]
         }
     }

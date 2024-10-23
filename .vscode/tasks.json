@@ -2,11 +2,12 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Run Demo",
+            "label": "Run Demo App",
             "type": "shell",
-            "command": "streamlit run",
+            "command": "sh",
             "args": [
-                "${file}"
+                "-c",
+                "cd ${fileDirname} && streamlit run ${file}"
             ],
             "group": {
                 "kind": "build",

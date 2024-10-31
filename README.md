@@ -9,5 +9,9 @@
 6. Open Azure Portal, find Azure Container App and access the app
 7. Go back to Codespaces and do some changes in ```src/demoapp/main.py``` using copilot. For example use this prompt: 
 ```add pie chart graph showing that 98% of GitHub customers are very satisfied and 2% satisfied```
-8. Test in Codespaces and if ok commit and push changes. This will trigger GitHub Actions again and new version will be deployed automatically.
-9. Go back to Azure Portal to see new revision and open app to see changes
+8. Test in Codespaces and if ok commit and push changes. Use copilot icon to help you generate commit message.
+9. Commit will trigger GitHub Actions again and new version will be deployed automatically.
+10. Go back to Azure Portal to see new revision and open app to see changes
+11. In Copilot open multi-file edit and use drag and drop to add all Terraform files from ```src/terraform``` to the editor working set. Now give it this task: 
+```Add Azure SQL as separate Terraform file and inject logins to my container app``` and note how it creates new files and modify all files that need it.
+12.  Use Azure extension for GitHub Copilot to ask about your Azure resources: ```@azure /resources What Azure Container Apps are running?```
